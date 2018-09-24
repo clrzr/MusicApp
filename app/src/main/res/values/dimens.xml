@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="controls_margin">24dp</dimen>
+    <dimen name="backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30sp</dimen>
+    <dimen name="backdrop_subtitle">18sp</dimen>
+    <dimen name="card_layout_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_art_height">160dp</dimen>
+    <dimen name="album_name_padding">10dp</dimen>
+    <dimen name="album_text_size">15sp</dimen>
+    <dimen name="song_count_bottom_padding">5dp</dimen>
+    <dimen name="song_count">12sp</dimen>
+    <dimen name="album_overflow_width">20dp</dimen>
+    <dimen name="album_overflow_height">30dp</dimen>
+    <dimen name="album_overflow_top_margin">10dp</dimen>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="demo_song">WHO?WHAT!</string>
+    <string name="demo_artist">Travis Scott</string>
+    <string name="menu_add_to_favs">Add to Favourites</string>
+    <string name="menu_play_next">Play Next</string>
+    <string name="title">Music App</string>
+    <string name="subtitle">Albums</string>
+    <string name="app_design_image">App design Image</string>
+    <string name="now_playing_image">Now Playing Image</string>
+    <string name="play_pauseButton">Play/Pause</string>
+    <string name="album_art">Album_art</string>
+    <string name="previous_button">previous button</string>
+    <string name="next_button">next button</string>
+    <string name="shuffle_button">shuffle</string>
+    <string name="repeat_button">repeat</string>
+    <string name="optionsdot">optionsDot</string>
+</resources>

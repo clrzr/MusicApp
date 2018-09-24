@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:src="@drawable/album4"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/album_art" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/ArtistTextView"
+            android:layout_marginTop="@dimen/controls_margin">
+
+            <ImageView
+                android:id="@+id/play_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="changePlayButton"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/play_pauseButton"
+                android:src="@drawable/ic_play" />
+
+            <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="74dp"
+                android:layout_toEndOf="@id/shuffle_button"
+                android:background="@drawable/round_corner"
+                android:contentDescription="@string/previous_button"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_skip_previous" />
+
+            <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="74dp"
+                android:layout_toStartOf="@id/repeat_button"
+                android:background="@drawable/round_corner"
+                android:contentDescription="@string/next_button"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_skip_next" />
+
+            <ImageView
+                android:contentDescription="@string/shuffle_button"
+                android:id="@+id/shuffle_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="shuffle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/ic_shuffle" />
+
+            <ImageView
+                android:contentDescription="@string/repeat_button"
+                android:id="@+id/repeat_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="repeat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp"
+                app:srcCompat="@drawable/ic_repeat" />
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/albumTextView"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/demo_song"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ArtistTextView"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/albumTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/demo_artist" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_width="350dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/album_art"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
