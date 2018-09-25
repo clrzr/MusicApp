@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.util.Objects;
+
 public class PlayerActivity extends AppCompatActivity {
 
     private Integer repeatChecker = 2;
@@ -19,6 +21,7 @@ public class PlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
+        Objects.requireNonNull(getActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
     private void changeIcon(Drawable img, View statusID) {

@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity{
 
     private AlbumGenerator adapter;
     private List<AlbumDisplay> albumList;
-    private AlbumGeneratorListener listener;
     private int IconChanger = 0;
     private int CheckPlay = 2;
 
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity{
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
 
         albumList = new ArrayList<>();
-        adapter = new AlbumGenerator(this, albumList, listener);
+        adapter = new AlbumGenerator(this, albumList);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(mLayoutManager);

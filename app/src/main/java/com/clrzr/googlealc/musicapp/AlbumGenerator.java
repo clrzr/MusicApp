@@ -43,7 +43,7 @@ public class AlbumGenerator extends RecyclerView.Adapter<AlbumGenerator.MyViewHo
         }
 
 
-         AlbumGenerator(Context mContext, List<AlbumDisplay> albumList, AlbumGeneratorListener listener) {
+    AlbumGenerator(Context mContext, List<AlbumDisplay> albumList) {
             this.mContext = mContext;
             this.albumList = albumList;
          }

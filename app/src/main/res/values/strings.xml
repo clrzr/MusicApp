@@ -15,4 +15,5 @@
     <string name="shuffle_button">shuffle</string>
     <string name="repeat_button">repeat</string>
     <string name="optionsdot">optionsDot</string>
+    <string name="player_activity">Now Playing</string>
 </resources>
